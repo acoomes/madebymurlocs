@@ -1,4 +1,5 @@
 // SASS VARIABLES
+$black: #111;
 $cyan-50: #E0F7FA;
 $cyan-200: #80DEEA;
 $cyan-400: #26C6DA;
@@ -13,6 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: $black;
   h1 {
     font-family: Pacifico, cursive;
   }
@@ -39,14 +41,17 @@ body {
 .cta {
   background: $red-A200;
   border: 0px;
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
+  color: $cyan-50;
   font-family: Pacifico, cursive;
-  font-size: 20px;
+  font-size: 22px;
+  line-height: 50px;
   margin: 10px;
-  padding: 4px 45px;
+  width: 180px;
   &:hover {
     background: $cyan-200;
+    // color: black;
   }
 }
 
