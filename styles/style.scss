@@ -1,24 +1,56 @@
+// SASS VARIABLES
+$cyan-50: #E0F7FA;
+$cyan-200: #80DEEA;
+$cyan-400: #26C6DA;
+$red-A200: #FF5252;
 
 body {
-  background: lightcyan;
+  background: $cyan-50;
 }
 
+// All primary content
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   h1 {
     font-family: Pacifico, cursive;
-    font-size: 40px;
-    line-height: 42px;
   }
   h3 {
     font-family: Pacifico, cursive;
     font-size: 20px;
     text-align: center;
   }
+  img {
+    border-radius: 25px;
+    margin: 10px;
+  }
 }
 
+// Intro section
+#intro {
+  h1 {
+    font-size: 42px;
+    line-height: 60px;
+  }
+}
+
+// CTA buttons
+.cta {
+  background: $red-A200;
+  border: 0px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: Pacifico, cursive;
+  font-size: 20px;
+  margin: 10px;
+  padding: 4px 45px;
+  &:hover {
+    background: $cyan-200;
+  }
+}
+
+// Media Queries
 @media screen and (max-width: 1000px) {
   .content img {
     max-width: 92%;
@@ -27,11 +59,11 @@ body {
 
 @media screen and (max-height: 956px) {
   .content img {
-    max-height: 70vh;
+    max-height: 60vh;
   }
 }
 
-@media screen and (max-height: 750px) {
+@media screen and (max-height: 792px) {
   .content img {
     height: 200px;
   }
