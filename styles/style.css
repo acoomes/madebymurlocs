@@ -17,7 +17,7 @@ body {
 
 #intro h1 {
   font-size: 42px;
-  line-height: 56px; }
+  line-height: 60px; }
 
 .cta {
   background: #FF5252;
@@ -37,7 +37,7 @@ body {
 @media screen and (max-height: 956px) {
   .content img {
     max-height: 60vh; } }
-@media screen and (max-height: 750px) {
+@media screen and (max-height: 792px) {
   .content img {
     height: 200px; } }
 
